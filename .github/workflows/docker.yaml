@@ -62,7 +62,7 @@ jobs:
           # 数据预处理,判断镜像是否重名
           declare -A duplicate_images
           declare -A temp_map
-          echo "::warning::# 镜像信息"  >> $GITHUB_STEP_SUMMARY
+          echo "::warning::# 镜像信息" 
           echo "::warning::===============================镜像信息==============================="
           while IFS= read -r line || [ -n "$line" ]; do
               # 忽略空行与注释
@@ -98,9 +98,9 @@ jobs:
               new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
           
               echo "::warning::--------------docker pull; docker tag; docker push;-------------------------"
-              echo "```$image```" >> $GITHUB_STEP_SUMMARY
-              echo "```$new_image```" >> $GITHUB_STEP_SUMMARY
-              echo "```docker pull $new_image```" >> $GITHUB_STEP_SUMMARY
+              echo "```$image```"
+              echo "```$new_image```"
+              echo "```docker pull $new_image```"
 
               # 如果镜像存在于数组中，则添加temp_map
               if [[ -n "${temp_map[$image_name]}" ]]; then
