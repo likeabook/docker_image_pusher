@@ -2,3 +2,4 @@
 #支持指定架构
 --platform=linux/arm64 clickhouse/clickhouse-server:23.2.7.32-alpine
 --platform=linux/arm64 bitnami/clickhouse:24.8.1
+registry.cn-hangzhou.aliyuncs.com/nnnn/linux_arm64_bitnami_clickhouse:24.8.1
