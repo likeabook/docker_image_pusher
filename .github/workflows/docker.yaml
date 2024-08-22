@@ -96,9 +96,9 @@ jobs:
               image_name_tag="${image_name_tag%%@*}"
               new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
           
-              echo "::warning::$image"
-              echo "::warning::$new_image"
-              echo "--------------docker pull; docker tag; docker push;-------------------------"
+              echo "$image"
+              echo "::info::$new_image"
+              echo "::warning::--------------docker pull; docker tag; docker push;-------------------------"
 
               # 如果镜像存在于数组中，则添加temp_map
               if [[ -n "${temp_map[$image_name]}" ]]; then
