@@ -62,6 +62,7 @@ jobs:
           # 数据预处理,判断镜像是否重名
           declare -A duplicate_images
           declare -A temp_map
+          echo "::warning::# 镜像信息"  >> $GITHUB_STEP_SUMMARY
           echo "::warning::===============================镜像信息==============================="
           while IFS= read -r line || [ -n "$line" ]; do
               # 忽略空行与注释
