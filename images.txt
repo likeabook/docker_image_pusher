@@ -1,4 +1,10 @@
 #支持私库
 #支持指定架构
---platform=linux/arm64 eclipse-temurin:8u422-b05-jdk-jammy
---platform=linux/amd64 eclipse-temurin:8u422-b05-jdk-jammy
+--platform=linux/arm64 biarms/mysql:5.7.30
+--platform=linux/amd64 biarms/mysql:5.7.30
+
+--platform=linux/arm64 alpine/helm:3.9.3
+--platform=linux/amd64 alpine/helm:3.9.3
+
+--platform=linux/arm64 rancher/kubectl:v1.23.7
+--platform=linux/amd64 rancher/kubectl:v1.23.7
