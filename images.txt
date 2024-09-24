@@ -1,6 +1,4 @@
 #支持私库
 #支持指定架构
---platform=linux/arm64 bitnami/redis:6.2.14
---platform=linux/amd64 bitnami/redis:6.2.14
---platform=linux/arm64 bitnami/redis:7.2.5
---platform=linux/amd64 bitnami/redis:7.2.5
+--platform=linux/arm64 cytopia/ansible:2.11
+--platform=linux/amd64 cytopia/ansible:2.11
