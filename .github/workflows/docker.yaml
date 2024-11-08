@@ -73,8 +73,14 @@ jobs:
               # 如果存在架构信息 将架构信息拼到镜像名称前面
               if [ -z "$platform" ]; then
                   platform_prefix=""
+                  PLATFORM_SUFFIX=""
               else
                   platform_prefix="${platform//\//-}."
+                  if [[ "$platform_prefix" == *"arm64"* ]]; then
+                      PLATFORM_SUFFIX="-arm"
+                  else
+                      PLATFORM_SUFFIX=""
+                  fi
               fi
               # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
               image=$(echo "$line" | awk '{print $NF}')
@@ -85,7 +91,6 @@ jobs:
               name_space=$(echo "$image" | awk -F'/' '{if (NF==3) print $2; else if (NF==2) print $1; else print ""}')
               # 获取镜像名例  例如nginx
               image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
-          
               name_space_prefix=""
               # 如果镜像名重名
               #如果命名空间非空，将命名空间加到前缀
@@ -95,11 +100,15 @@ jobs:
               # 将@sha256:等字符删除
               image_name_tag="${image_name_tag%%@*}"
               new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
-          
+              harbor_new_image="harbor-bj.eversaas.cn/public/$image_name_tag$PLATFORM_SUFFIX"
+              
               echo "::warning::--------------------docker pull; docker tag; docker push;--------------------------------"
               echo -e "::warning::原镜像: $image"
               echo -e "::warning::新镜像: $new_image"
               echo -e "::warning::拉取命令: docker pull $new_image"
+              echo -e "docker pull $new_image"
+              echo -e "docker tag $new_image $harbor_new_image"
+              echo -e "docker push $harbor_new_image"
 
               # 如果镜像存在于数组中，则添加temp_map
               if [[ -n "${temp_map[$image_name]}" ]]; then
