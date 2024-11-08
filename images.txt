@@ -1,6 +1,5 @@
 #支持私库
 #支持指定架构
- --platform=linux/arm64 mysql:8.0.40
+ --platform=linux/arm64 mysql:8.4.3
 
- --platform=linux/amd64 mysql:8.0.40
-sonatype/nexus3:3.74.0-ubi
+ --platform=linux/amd64 mysql:8.4.3
