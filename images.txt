@@ -1,5 +1,11 @@
 #支持私库
 #支持指定架构
- --platform=linux/arm64 mysql:8.4.3
+# --platform=linux/arm64 mysql:8.4.3
+# --platform=linux/amd64 mysql:8.4.3
 
- --platform=linux/amd64 mysql:8.4.3
+helmify/helmify:117341820221
+
+
+
+
+
