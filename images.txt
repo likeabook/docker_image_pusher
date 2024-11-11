@@ -1,8 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=alibabadragonwell/dragonwell:8.20.21-standard-ga-anolis-slim
+ --platform=linux/amd64  alibabadragonwell/dragonwell:8.20.21-standard-ga-anolis-slim
 
- --platform=alibabadragonwell/dragonwell:8.20.21-standard-ga-anolis-slim
+ --platform=linux/arm64  alibabadragonwell/dragonwell:8.20.21-standard-ga-anolis-slim
 
 
 
