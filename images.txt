@@ -1,9 +1,9 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 openeuler/openeuler:22.03
+ --platform=linux/amd64  openeuler/openeuler:24.03
 
 
- --platform=linux/arm64 openeuler/openeuler:22.03
+ --platform=linux/arm64  openeuler/openeuler:24.03
 
 
 
