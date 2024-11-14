@@ -1,9 +1,9 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 openeuler/openresty:1.25.3.1-oe2203sp2
+ --platform=linux/amd64 openeuler/openeuler:22.03
 
 
- --platform=linux/arm64 openeuler/openresty:1.25.3.1-oe2203sp2
+ --platform=linux/arm64 openeuler/openeuler:22.03
 
 
 
