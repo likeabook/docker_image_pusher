@@ -1,9 +1,9 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 eclipse-temurin:8u432-b06-jdk-focal
+ --platform=linux/amd64 openeuler/openeuler:20.03-lts-sp3
 
 
- --platform=linux/arm64 eclipse-temurin:8u432-b06-jdk-focal
+ --platform=linux/arm64 openeuler/openeuler:20.03-lts-sp3
 
 
 
