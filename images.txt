@@ -1,9 +1,9 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 openeuler/openeuler:20.03-lts-sp3
+ --platform=linux/amd64  ubuntu/mysql:8.0-20.04_beta
 
 
- --platform=linux/arm64 openeuler/openeuler:20.03-lts-sp3
+ --platform=linux/arm64  ubuntu/mysql:8.0-20.04_beta
 
 
 
