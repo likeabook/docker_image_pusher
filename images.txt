@@ -1,9 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 jenkins/agent:3206.3208.v409508a_675ff-1-jdk17
+ --platform=linux/amd64 jenkins/inbound-agent:3206.3208.v409508a_675ff-1-jdk17
 
- --platform=linux/arm64 jenkins/agent:3206.3208.v409508a_675ff-1-jdk17
-
+ --platform=linux/arm64 jenkins/inbound-agent:3206.3208.v409508a_675ff-1-jdk17
 
 
 
