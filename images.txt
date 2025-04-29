@@ -1,7 +1,7 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 dstockhammer/docker-buildx:28.0.1-0.21.1
- --platform=linux/arm64 dstockhammer/docker-buildx:28.0.1-0.21.1
+ --platform=linux/amd64 portainer/portainer-ce:2.29.2-alpine
+ --platform=linux/arm64 portainer/portainer-ce:2.29.2-alpine
 
 
 
