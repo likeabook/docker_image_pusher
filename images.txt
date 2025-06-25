@@ -1,8 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 jenkins/jenkins:2.515-jdk21
+ --platform=linux/amd64 jenkins/agent:3309.v27b_9314fd1a_4-4-jdk21
 
- --platform=linux/arm64 jenkins/jenkins:2.515-jdk21
+ --platform=linux/arm64 jenkins/agent:3309.v27b_9314fd1a_4-4-jdk21
 
 
 
