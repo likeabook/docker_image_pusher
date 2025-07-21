@@ -1,10 +1,13 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 jenkins/agent:3309.v27b_9314fd1a_4-4-jdk21
+ --platform=linux/amd64 node:22.17.1-bookworm
 
- --platform=linux/arm64 jenkins/agent:3309.v27b_9314fd1a_4-4-jdk21
+ --platform=linux/arm64 node:22.17.1-bookworm
 
 
+ --platform=linux/amd64  node:24.4.1-bookworm
+
+ --platform=linux/arm64 node:24.4.1-bookworm
 
 
 
