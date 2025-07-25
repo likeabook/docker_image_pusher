@@ -1,8 +1,13 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 clickhouse/clickhouse-server:23.3.1.2823-alpine
+ --platform=linux/amd64  portainer/agent:2.32.0-alpine
 
- --platform=linux/arm64 clickhouse/clickhouse-server:23.3.1.2823-alpine
+ --platform=linux/arm64 portainer/agent:2.32.0-alpine
+
+#支持指定架构
+ --platform=linux/amd64 portainer/portainer-ce:2.32.0-alpine
+
+ --platform=linux/arm64 portainer/portainer-ce:2.32.0-alpine
 
 
 
