@@ -1,13 +1,12 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64  mysql:8.4.6
+ --platform=linux/amd64 bitnami/mysql:5.7.43
 
- --platform=linux/arm64 mysql:8.4.6
+ --platform=linux/arm64 bitnami/mysql:5.7.43
 
-#支持指定架构
- --platform=linux/amd64  mysql:8.0.43
 
- --platform=linux/arm64 mysql:8.0.43
+
+
 
 
 
