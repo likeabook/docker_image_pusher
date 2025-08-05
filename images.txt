@@ -1,8 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 minio/minio:RELEASE.2025-07-23T15-54-02Z
+ --platform=linux/amd64 zookeeper:3.9.3
 
- --platform=linux/arm64 minio/minio:RELEASE.2025-07-23T15-54-02Z
+ --platform=linux/arm64 zookeeper:3.9.3
 
 
 
