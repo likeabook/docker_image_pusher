@@ -1,8 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 apache/kafka:3.9.1
+ --platform=linux/amd64 redis/redis-stack:7.4.0-v6
 
- --platform=linux/arm64 apache/kafka:3.9.1
+ --platform=linux/arm64 redis/redis-stack:7.4.0-v6
 
 
 
