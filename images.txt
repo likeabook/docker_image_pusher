@@ -1,8 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 clickhouse/clickhouse-server:23.4.4.16
+ --platform=linux/amd64 openresty/openresty:1.27.1.2-4-bookworm
 
- --platform=linux/arm64 clickhouse/clickhouse-server:23.4.4.16
+ --platform=linux/arm64 openresty/openresty:1.27.1.2-4-bookworm
 
 
 
