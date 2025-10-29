@@ -1,8 +1,8 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64  bitnamilegacy/mysql:5.7.43-debian-11-r73
+ --platform=linux/amd64 mcuadros/ofelia:0.3
 
- --platform=linux/arm64  bitnamilegacy/mysql:5.7.43-debian-11-r73
+ --platform=linux/arm64 mcuadros/ofelia:0.3
 
 
 
