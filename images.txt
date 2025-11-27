@@ -1,9 +1,9 @@
 #支持私库
 #支持指定架构
- --platform=linux/amd64 clickhouse/clickhouse-server:23.3.22.3
+ --platform=linux/amd64 mysql:8.4.7
 
 
- --platform=linux/arm64 clickhouse/clickhouse-server:23.3.22.3
+ --platform=linux/arm64 mysql:8.4.7
 
 
 
